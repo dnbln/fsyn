@@ -1,0 +1,19 @@
+[workspace]
+members = ["fsyn-proc"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[package]
+name = "fsyn"
+version.workspace = true
+edition.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fsyn-proc.workspace = true
+
+[workspace.dependencies]
+fsyn-proc = {path = "fsyn-proc"}
